@@ -63,14 +63,16 @@ const PasswordGenerator: React.FC<PasswordGeneratorProps> = () => {
         }, 500);
       }
       
-      toast('Password copied to clipboard', {
+      toast({
+        title: 'Password copied to clipboard',
         description: 'Your generated password has been copied to your clipboard.',
         duration: 3000,
       });
       
       setTimeout(() => setCopied(false), 2000);
     } catch (err) {
-      toast('Failed to copy password', {
+      toast({
+        title: 'Failed to copy password',
         description: 'Please try again or copy manually.',
         duration: 3000,
       });
