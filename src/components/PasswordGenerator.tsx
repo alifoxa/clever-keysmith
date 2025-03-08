@@ -2,7 +2,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Slider } from '@/components/ui/slider';
 import { Button } from '@/components/ui/button';
-import { toast } from '@/components/ui/sonner';
+import { toast } from '@/hooks/use-toast';
 import CharacterSelector from './CharacterSelector';
 import PasswordStrength from './PasswordStrength';
 import { generatePassword } from '@/utils/passwordUtils';
